@@ -1,0 +1,56 @@
+{
+    "_version": "1.67.0",
+    "sap.app": {
+        "id": "csv.crud",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "title": "CSV Items",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "sourceTemplate": {
+            "id": "@sap/ux-app-migrator:freestyle",
+            "version": "1.18.4",
+            "toolsId": "0a717ca3-3b3b-4377-9559-60cac2ca0732"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {},
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        }
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "csv.crud.view.Main",
+            "type": "XML",
+            "async": true,
+            "id": "main"
+        },
+        "dependencies": {
+            "minUI5Version": "1.120.0",
+            "libs": {
+                "sap.m": {},
+                "sap.ui.layout": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "csv.crud.i18n.i18n"
+                }
+            }
+        },
+        "resources": {
+            "css": []
+        }
+    }
+}
