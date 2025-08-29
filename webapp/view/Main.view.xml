@@ -20,12 +20,11 @@
             <Button text="Delete" type="Negative" press=".onDelete" enabled="{= ${itemsModel>/selectedId} ? true : false }"/>
             <Button text="Refresh" press=".onRefresh"/>
           </Toolbar>
-
           <Table id="table"
-            mode="SingleSelectLeft"
-            items="{itemsModel>/items}"
-            growing="true"
-            selectionChange=".onSelect">
+                mode="SingleSelectLeft"
+                items="{itemsModel>/items}"
+                growing="true"
+                selectionChange=".onSelect">
             <columns>
               <Column width="8rem"><Text text="ID"/></Column>
               <Column><Text text="Name"/></Column>
